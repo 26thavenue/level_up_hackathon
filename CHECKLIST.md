@@ -1,0 +1,12 @@
+- Optiise images
+- Cut down on size
+- Check for SEO
+- Lazy load for images
+- Accesibility
+- Aria
+- Optimise for all screen sizes
+- Double check on colour
+- Rename classnames
+- put all those webkit stuff to optiise between browsers
+- Change the image to a link
+- Check if the padding and spacing on the design is the same as the one on the website
