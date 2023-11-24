@@ -10,3 +10,5 @@
 - put all those webkit stuff to optiise between browsers
 - Change the image to a link
 - Check if the padding and spacing on the design is the same as the one on the website
+- Apply the drop shadow for the buttons
+- Check shadows for everything

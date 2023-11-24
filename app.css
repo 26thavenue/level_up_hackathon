@@ -34,7 +34,7 @@
 }
 
 *{
-    margin: 0;
+    margin: 0 ;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
@@ -54,6 +54,42 @@
 body{
     background-color: var(--background-gray);
 }
+
+/*------------------------------------------------- BUTTONS---------------------------------------------- */
+
+.btn-primary{
+    background-color: #404040;
+    color: #fff;
+    padding: 6px 12px;  
+    border-radius: var(--border-radius);
+    font-size: 12px;
+    font-weight:600;
+    outline-width: 1.5px 1.5px 0px 1.5px;
+    outline-style: solid;
+    outline-color: #404040;
+}
+
+.btn-secondary{
+    background-color: var(--background-white);
+    color: #323232;
+    padding: 6px 12px;  
+    border-radius: var(--border-radius);
+    font-size: 12px;
+    font-weight:600;
+    outline-width: 1px 1px 1px 1px;
+    outline-style: solid;
+    outline-color: rgba(0,0,0,0.1);
+}
+
+.btn-tertiary{
+    background-color: transparent;
+    color: #323232;
+    padding: 6px 12px;  
+    border-radius: var(--border-radius);
+    font-size: 12px;
+    font-weight:600;
+}
+
 
 /*------------------------------------------------- NAVBAR---------------------------------------------- */
 
@@ -109,13 +145,13 @@ body{
     display: flex;
     align-items: center;
     align-content: center;
-    justify-items: center;
+    
     background-color: var(--gray-medium);
     border-radius: var(--border-radius);
     border: 1px solid #616161;
     padding: 8px;
     width: 480px;
-    gap: 6px;
+    gap: 8px;
     transition: background-color 0.1s ease-in-out; 
     cursor: none;
     caret-color: transparent; 
@@ -125,18 +161,18 @@ body{
 .navbar-search:hover{
     border: 1px solid #E1E1E1
 }
+
 .navbar-search:focus-within,
 .navbar-search:active{
     border: 2px solid #fff;
 }
-
-
 
 .navbar-search-input{
     background-color: transparent;
     border: none;
     outline: none;
     font-weight: 500;
+    margin:0px;
 }
 
 .navbar-search-input::placeholder{
@@ -147,4 +183,75 @@ body{
     color: var(--gray-light);
     stroke: var(--gray-light);
     width: 13px;
+    margin: 0px;
 }
+
+/*--------------------------------------- MAIN------------------------------------------------------ */
+
+.banner{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color: #1A1A1A;
+    padding: 12px 8px 12px 16px;
+    margin-top: 40px;
+    width: 800px;
+    height: 56px;
+    color: #fff;
+    border-radius: var(--border-radius);
+    font-size: 13px;
+    font-weight:500;
+}
+
+.banner-text{
+    margin: 0px;
+}
+.banner-group{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin : 0px;
+}
+
+.banner-icon{
+    padding: 0px 6px;
+}
+
+section{
+    display:grid;
+    color: #000000;
+    margin: 0 auto;
+    background-color: #fff;
+    width:800px;
+    margin-top:20px;
+    border-radius: var(--border-radius);
+    font-size: 13px;
+}
+
+.section-top{
+    display:grid;
+    gap: 16px;
+    padding:8px;
+}
+
+.top-font{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+ .progress-container {
+    width: 72px;
+    background-color: #eee;
+    height: 20px; /* Set the height of the progress bar */
+    margin-bottom: 20px; /* Add spacing for better visibility */
+    border-radius: 28px;
+}
+
+.progress-bar {
+    width: 20%; /* Set the initial width of the progress bar to one-fifth */
+    height: 100%;
+    background-color: #1A1A1A; /* Set the color of the progress bar */
+    border-radius: 28px;
+}
+
