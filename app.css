@@ -46,6 +46,10 @@
     align-items: center;
 }
 
+.semi-bold{
+    font-weight: 600;
+}
+
 .highlight{
     background-color: var(--gray-medium);
     border-radius: var(--border-radius);
@@ -59,6 +63,7 @@ body{
 
 .btn-primary{
     background-color: #404040;
+    width: max-content;
     color: #fff;
     padding: 6px 12px;  
     border-radius: var(--border-radius);
@@ -67,10 +72,12 @@ body{
     outline-width: 1.5px 1.5px 0px 1.5px;
     outline-style: solid;
     outline-color: #404040;
+    
 }
 
 .btn-secondary{
     background-color: var(--background-white);
+    width: max-content;
     color: #323232;
     padding: 6px 12px;  
     border-radius: var(--border-radius);
@@ -79,15 +86,15 @@ body{
     outline-width: 1px 1px 1px 1px;
     outline-style: solid;
     outline-color: rgba(0,0,0,0.1);
+    width: auto;
 }
 
 .btn-tertiary{
-    background-color: transparent;
-    color: #323232;
+    width: max-content;
     padding: 6px 12px;  
-    border-radius: var(--border-radius);
     font-size: 12px;
     font-weight:600;
+    border:none;
 }
 
 
@@ -227,24 +234,33 @@ section{
     margin-top:20px;
     border-radius: var(--border-radius);
     font-size: 13px;
+    gap:16px;
+}
+
+.section-header{
+    display:grid;
+    gap: 16px;
+    padding:8px 16px;
 }
 
 .section-top{
-    display:grid;
-    gap: 16px;
-    padding:8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap:4px;
 }
 
 .top-font{
     font-size: 14px;
     font-weight: 600;
+    color: #303030;
 }
 
  .progress-container {
     width: 72px;
     background-color: #eee;
-    height: 20px; /* Set the height of the progress bar */
-    margin-bottom: 20px; /* Add spacing for better visibility */
+    height: 4px; /* Set the height of the progress bar */
     border-radius: 28px;
 }
 
@@ -253,5 +269,69 @@ section{
     height: 100%;
     background-color: #1A1A1A; /* Set the color of the progress bar */
     border-radius: 28px;
+}
+
+.check{
+    display: flex;
+    gap:8px;
+    align-items: center;
+    font-size: 12px;
+}
+
+.section-main{
+    display: grid;
+    gap: 8px;
+    padding: 8px;
+}
+
+li{
+    background-color:#F3F3F3;
+    border-radius: 10px;
+}
+
+.listopen{
+    display: flex;
+    padding: 8px 8px 12px 8px;
+    justify-content: space-between;
+}
+
+
+
+.first-text-wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap:8px;
+}
+
+.first-grid-col{
+    display: grid;
+    gap: 16px;
+    padding:2px 0px;
+    align-self: flex-start;
+    font-size: 13px;
+    max-width: 483.66px;
+}
+
+a{
+   color:#005BD3;
+   font-size: 13px;
+}
+
+.section-secndary-text-color{
+    color: #616161
+}
+
+
+/*--------------------------------------------------MEDIA SCREENS------------------------------------------ */
+
+/* Media query for screens with a maximum width of 600px */
+@media only screen and (max-width: 600px) {
+    
+}
+
+/* Media query for screens with a minimum width of 601px and a maximum of 1024px */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    
 }
 

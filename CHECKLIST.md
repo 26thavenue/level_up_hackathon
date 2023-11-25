@@ -12,3 +12,5 @@
 - Check if the padding and spacing on the design is the same as the one on the website
 - Apply the drop shadow for the buttons
 - Check shadows for everything
+- Add href for the links
+  
